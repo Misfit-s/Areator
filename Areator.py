@@ -6,6 +6,8 @@ class Circle:
         self.pi = m.pi
         """the number of pi"""
         self.radius = float(radius)
+        if self.radius <= 0:
+            raise ValueError("Radius must be positive")
         """the radius of the circle"""
         self.area = 0
         """the area of the circle"""

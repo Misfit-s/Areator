@@ -1,3 +1,20 @@
+import math as m
+
+class Circle:
+    """A class that represents a circle."""
+    def __init__(self, radius):
+        self.pi = m.pi
+        """the number of pi"""
+        self.radius = float(radius)
+        """the radius of the circle"""
+        self.area = 0
+        """the area of the circle"""
+        
+    def get_area_of_circle(self):
+        """Returns the area of the circle."""
+        self.area = self.pi * (self.radius ** 2)
+        return self.area
+
 class Triangle:
     """"A class that represents a triangle."""
     
@@ -7,9 +24,10 @@ class Triangle:
         self.side_c = side_c
         self.sides = {'side_a': self.side_a,'side_b': self.side_b,'side_c': self.side_c}
         self.area = 0
+        """"the area of the triangle"""
         
     def semiperimeter(self):
-        """"Returns the semiperimeter."""
+        """Returns the semiperimeter."""
         return 1 / 2 * (self.side_a + self.side_b + self.side_c)
     
     def hypotenuse(self):

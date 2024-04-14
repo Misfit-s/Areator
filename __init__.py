@@ -6,5 +6,4 @@ The MIT License Copyright (c) 2024 Misfit-s
 
 """
 
-from .Circle import *
-from .Triangle import *
+from .Areator import *

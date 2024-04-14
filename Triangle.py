@@ -33,13 +33,7 @@ class Triangle:
         else:
             return False
         
-    def area_of_triangle(self):
+    def get_area_of_triangle(self):
         """""Returns the area of the triangle."""
-        if self.is_triangle_right_angled():
-            print("Areator: The triangle is right-angled.")
-            
-        else:
-            print("Areator: The triangle is not right-angled.")
-            
         semiperimeter = self.semiperimeter()
         return (semiperimeter * (semiperimeter - self.side_a) * (semiperimeter - self.side_b) * (semiperimeter - self.side_c)) ** 0.5

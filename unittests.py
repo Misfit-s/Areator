@@ -21,6 +21,10 @@ class TestTriangle(unittest.TestCase):
     def test_is_right_angled(self):
         triangle = Triangle(3, 4, 5)
         self.assertTrue(triangle.is_triangle_right_angled())
+    
+    def test_invalid_sides(self):
+        with self.assertRaises(ValueError):
+            Triangle(0, 0, 0)
         
 if __name__ == '__main__':
     unittest.main()

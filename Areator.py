@@ -24,6 +24,8 @@ class Triangle:
         self.side_a = side_a
         self.side_b = side_b
         self.side_c = side_c
+        if self.side_a <= 0 or self.side_b <= 0 or self.side_c <= 0:
+            raise ValueError("Sides must be positive")
         self.sides = {'side_a': self.side_a,'side_b': self.side_b,'side_c': self.side_c}
         self.area = 0
         """the area of the triangle"""

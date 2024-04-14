@@ -16,7 +16,7 @@ class Circle:
         return self.area
 
 class Triangle:
-    """"A class that represents a triangle."""
+    """A class that represents a triangle."""
     
     def __init__(self, side_a, side_b, side_c):
         self.side_a = side_a
@@ -24,14 +24,14 @@ class Triangle:
         self.side_c = side_c
         self.sides = {'side_a': self.side_a,'side_b': self.side_b,'side_c': self.side_c}
         self.area = 0
-        """"the area of the triangle"""
+        """the area of the triangle"""
         
     def semiperimeter(self):
         """Returns the semiperimeter."""
         return 1 / 2 * (self.side_a + self.side_b + self.side_c)
     
     def hypotenuse(self):
-        """""Returns the hypotenuse."""
+        """Returns the hypotenuse."""
         hypotenuse_name = max(self.sides, key = self.sides.get)
         return hypotenuse_name
     
@@ -52,6 +52,6 @@ class Triangle:
             return False
         
     def get_area_of_triangle(self):
-        """""Returns the area of the triangle."""
+        """Returns the area of the triangle."""
         semiperimeter = self.semiperimeter()
         return (semiperimeter * (semiperimeter - self.side_a) * (semiperimeter - self.side_b) * (semiperimeter - self.side_c)) ** 0.5
